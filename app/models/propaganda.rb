@@ -1,0 +1,2 @@
+class Propaganda < ApplicationRecord
+end
