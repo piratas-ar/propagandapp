@@ -1,6 +1,11 @@
-=link_to "Nuevo", new_propaganda_path
-%table
-  -@propagandas.each do |propaganda|
-    %tr
-      %td= propaganda.titulo
+.container
+  .row
+    .col-md-12
+      = render 'form'
 
+  .row
+    .col-md-9.col-sm-12
+      = render 'propagandas', propagandas: @propagandas
+
+    .col-md-3.col-sm-12
+      = #render 'piratas/online', piratas: @online

@@ -1,0 +1,10 @@
+- @propaganda ||= Propaganda.new
+.propaganda-input
+  =form_for @propaganda, remote: true do |f|
+    =f.label :titulo
+    =f.text_field :titulo
+    =f.label :cuerpo
+    =f.text_area :cuerpo
+    =f.label :url
+    =f.text_field :url
+    =f.submit

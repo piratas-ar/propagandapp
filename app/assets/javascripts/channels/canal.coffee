@@ -7,3 +7,8 @@ App.canal = App.cable.subscriptions.create "CanalChannel",
 
   received: (data) ->
     # Called when there's incoming data on the websocket for this channel
+    $('#propagandas').append data['render_propaganda']
+    $('#vacio').remove()
+    $('#propaganda_titulo').val('')
+    $('#propaganda_cuerpo').val('')
+    $('#propaganda_url').val('')
