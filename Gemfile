@@ -53,3 +53,4 @@ end
 
 gem 'pg'
 gem 'haml-rails'
+gem 'bootstrap-sass'
